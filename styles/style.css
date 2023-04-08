@@ -1,0 +1,164 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Arial';
+  box-sizing: border-box;
+}
+
+ul>li {
+  list-style: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: black;
+  padding: 20px;
+}
+
+
+
+a,
+button {
+  color: #fff;
+  text-decoration: none;
+}
+
+.wrapper {
+  width: 100%;
+  background: rgb(58, 58, 158);
+  border: 3px solid black;
+  height: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper>div {
+  width: 33.33%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.wrapper>div:not(:last-child) {
+  margin-right: 10px;
+
+}
+
+.btn-get-product, .reset-k-heram {
+  background: rgb(58, 176, 255);
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.products-container {
+  margin-top: 10px;
+  width: 100%;
+  height: 100%;
+  background: rgb(111, 205, 57);
+  padding: 10px;
+  overflow-y: auto;
+}
+
+h1 {
+  margin-top: 10px;
+  color: #fff
+}
+
+.middleContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.middleContainer__btns {
+  margin-top: 11px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-add-product,
+.btn-add-sales {
+  background: rgb(58, 176, 255);
+  border-radius: 10px;
+  width: 125px;
+  height: 125px;
+  text-align: center;
+  position: relative;
+  margin-top: 60px;
+  transform: rotate(45deg);
+}
+
+.btn-add-product {
+  margin-bottom: 40px;
+}
+
+.btn-add-sales {
+  margin-top: 40px;
+}
+
+button>span {
+  display: block;
+  position: absolute;
+  top: 30%;
+  left: 55%;
+  transform: rotate(-45deg) translate(-50%, -50%);
+}
+
+ul>li {
+  background: black;
+  padding: 5px;
+  border-radius: 5px;
+  color: #FFF;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.prices>.price {
+  background: brown;
+}
+
+.prices>.new-price {
+  background: rgb(76, 0, 255)
+}
+
+.rightContainer>.products-container>ul>li>.prices>.price {
+  /* text-decoration: line-through; */
+  background: rgb(76, 0, 255)
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%;
+  text-align: center;
+}
+
+.form-group>button {
+  margin: 10px;
+  background: black;
+  font-size: 20px;
+}
