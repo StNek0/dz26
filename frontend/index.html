@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>hw #25 | products</title>
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -30,19 +30,9 @@
       <a href="/products-action" class="btn-get-product">Получить акционные</a>
       <div class="products-container">
         <ul id="right-products">
-          <% if (productsSale.length) { %>
-            <% productsSale.forEach(product=> { %>
-              <li>
-                <span>
-                  <%= product.title %>
-                </span>
-                <div class="prices">
-                  <span class="price">[<%= product.price %>]</span>
-                  <span class="new-price">[<%= product.newPrice %>]</span>
-                </div>
-              </li>
-              <% }) %>
-                <% } %>
+            <li>
+          
+            </li>
         </ul>
       </div>
     </div>
