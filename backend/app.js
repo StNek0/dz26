@@ -17,7 +17,7 @@ mongoose
 const app = express()
 
 
-app.use(express.static(path.join(__dirname, '../frontend/public'), {
+app.use(express.static(path.join(__dirname, '../frontend'), {
   extensions: ['html', 'css', 'js']
 }));
 // Добавляем парсер для JSON и формы
